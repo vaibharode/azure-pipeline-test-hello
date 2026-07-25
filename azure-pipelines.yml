@@ -5,18 +5,22 @@ pool:
   vmImage: 'ubuntu-24.04'
 
 steps:
-  - script: python --version
-    echo "checked python version"
+  - script: |
+      python --version
+      echo "Checked Python version"
     displayName: 'Checking Python Version'
 
-  - script: git --version
-    echo "checked git version"  
+  - script: |
+      git --version
+      echo "Checked Git version"
     displayName: 'Checking Git Version'
 
-  - script: tree --version
-    echo "checked tree version"
+  - script: |
+      tree --version
+      echo "Checked Tree version"
     displayName: 'Checking Tree Version'
 
-  - script: node -v 
-    echo "checked node version" 
-    displayName: 'Checking Node Version'  
+  - script: |
+      node -v
+      echo "Checked Node version"
+    displayName: 'Checking Node Version'
