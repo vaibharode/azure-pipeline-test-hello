@@ -23,6 +23,7 @@ steps:
     
   - script: |
       docker images 
-      echo "Listing Docker Images"  
+      echo "Listing Docker Images" 
+    displayName: 'Docker Image Listing'   
 
   
