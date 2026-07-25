@@ -8,3 +8,7 @@ pool:
 steps:
 - script: python --version
   displayName: 'Checking Python Version'
+
+steps:
+  - task: git --version
+    displayName: 'Checking Git Version'  
