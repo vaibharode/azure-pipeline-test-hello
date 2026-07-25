@@ -16,4 +16,13 @@ steps:
       echo "Checking Docker Engine Status " 
     displayName: 'Checking Docker Engine Status'
 
+  - script: |
+      docker build -t my-python-app .
+      echo "Docker Image Built Successfully"
+    displayName: 'Building Docker Image'  
+    
+  - script: |
+      docker images 
+      echo "Listing Docker Images"  
+
   
