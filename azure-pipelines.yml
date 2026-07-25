@@ -10,5 +10,5 @@ steps:
   displayName: 'Checking Python Version'
 
 steps:
-  - task: git --version
-    displayName: 'Checking Git Version'  
+- script:  git --version
+  displayName: 'Checking Git Version'
