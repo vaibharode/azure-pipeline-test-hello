@@ -10,6 +10,9 @@ steps:
 
   - script: git --version
     displayName: 'Checking Git Version'
-    
+
   - script: tree --version
     displayName: 'Checking Tree Version'
+
+  - script: node -v 
+    displayName: 'Checking Node Version'  
