@@ -6,26 +6,14 @@ pool:
 
 steps:
   - script: |
-      python --version
-      echo "Checked Python version"
-    displayName: 'Checking Python Version'
+      docker --version
+      echo "Checked Docker version"
+    displayName: 'Checking Docker Version'
 
   - script: |
+      sudo systemctl status docker
       python helloworld.py
-      echo "running python helloworld program" 
-    displayName: 'Running Python HelloWorld'   
+      echo "Checking Docker Engine Status " 
+    displayName: 'Checking Docker Engine Status'
 
-  - script: |
-      git --version
-      echo "Checked Git version"
-    displayName: 'Checking Git Version'
-
-  - script: |
-      tree --version
-      echo "Checked Tree version"
-    displayName: 'Checking Tree Version'
-
-  - script: |
-      node -v
-      echo "Checked Node version"
-    displayName: 'Checking Node Version'
+  
