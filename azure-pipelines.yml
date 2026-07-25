@@ -6,13 +6,17 @@ pool:
 
 steps:
   - script: python --version
+    echo "checked python version"
     displayName: 'Checking Python Version'
 
   - script: git --version
+    echo "checked git version"  
     displayName: 'Checking Git Version'
 
   - script: tree --version
+    echo "checked tree version"
     displayName: 'Checking Tree Version'
 
   - script: node -v 
+    echo "checked node version" 
     displayName: 'Checking Node Version'  
