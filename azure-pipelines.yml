@@ -11,6 +11,11 @@ steps:
     displayName: 'Checking Python Version'
 
   - script: |
+      python helloworld.py
+      echo "running python helloworld program" 
+    displayName: 'Running Python HelloWorld'   
+
+  - script: |
       git --version
       echo "Checked Git version"
     displayName: 'Checking Git Version'
