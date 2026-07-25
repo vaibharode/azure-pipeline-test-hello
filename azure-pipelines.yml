@@ -26,4 +26,12 @@ steps:
       echo "Listing Docker Images" 
     displayName: 'Docker Image Listing'   
 
-  
+  - script: |
+      docker run my-python-app
+      echo "Running Docker Container"    
+    displayName: 'Running Docker Container'
+
+  - script: |
+      docker container ls 
+      echo "Listing Docker Containers"
+    displayName: 'Docker Container Listing'
