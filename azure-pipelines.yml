@@ -35,3 +35,8 @@ steps:
       docker container ls 
       echo "Listing Docker Containers"
     displayName: 'Docker Container Listing'
+
+  - script: |
+      docker ps -a 
+      echo "Listing all containers"  
+    displayName: 'Listing all containers'
